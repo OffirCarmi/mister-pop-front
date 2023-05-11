@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    width: 30vw;
+    height: 100vh;
+    padding: 25px;
+
+    background-color: $grey-light;
+
+    svg {
+        height: 75px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 641px) {
+    header {
+    }
+}

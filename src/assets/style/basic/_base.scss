@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: $bg;
+    color: $txt;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    color: $txt;
+    text-decoration: none;
+
+    &:hover {
+        color: $white;
+    }
+
+    &.active {
+        color: $brand;
+        cursor: default;
+    }
+}
+
+button {
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    font-family: sans-serif;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    margin: 0;
+    cursor: pointer;
+}
+
+// hr {
+//     width: 85%;
+//     margin: -5px;
+//     border-bottom: 1px solid $txt;
+// }
+
+// ::-webkit-scrollbar {
+//     display: none;
+// }
+
+// @media (min-width: 641px) {
+//     ::-webkit-scrollbar {
+//         display: block;
+//         width: 16px;
+//         border-radius: 10px;
+//     }
+
+//     ::-webkit-scrollbar-track {
+//         // background: $g4-opc;
+//         border-radius: 10px;
+//     }
+
+//     ::-webkit-scrollbar-thumb {
+//         background: $txt;
+//         border-radius: 10px;
+//     }
+// }

@@ -1,0 +1,19 @@
+#root {
+    // width: 100vw;
+    // height: 100vh;
+
+    .app {
+        display: flex;
+
+        > *:not(header) {
+            width: 70vw;
+        }
+    }
+}
+
+@media (min-width: 641px) {
+    #root {
+        .app {
+        }
+    }
+}

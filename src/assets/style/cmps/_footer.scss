@@ -1,0 +1,18 @@
+footer {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+        font-size: rem(14px);
+        font-weight: 300;
+    }
+    
+}
+
+@media (min-width: 641px) {
+    footer {
+
+    }
+}
