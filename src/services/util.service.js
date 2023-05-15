@@ -6,7 +6,7 @@ export const utilService = {
     isSameArray
 }
 
-function makeId(length = 6) {
+function makeId(length = 5) {
     var txt = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 

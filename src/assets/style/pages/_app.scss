@@ -4,9 +4,13 @@
 
     .app {
         display: flex;
+        // flex-direction: column;
 
         > *:not(header) {
-            width: 70vw;
+            width: calc(100vw - 250px);
+            padding: 25px;
+            height: 100vh;
+            overflow-y: scroll;
         }
     }
 }

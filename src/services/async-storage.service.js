@@ -1,3 +1,4 @@
+import { utilService } from "./util.service.js"
 
 export const storageService = {
     query,
@@ -26,7 +27,7 @@ function get(entityType, entityId) {
 }
 
 function post(entityType, newEntity) {
-    newEntity._id = _makeId()
+    newEntity._id = utilService.makeId()
     return query(entityType)
         .then(entities => {
             entities.push(newEntity)
@@ -58,13 +59,4 @@ function remove(entityType, entityId) {
 
 function _save(entityType, entities) {
     localStorage.setItem(entityType, JSON.stringify(entities))
-}
-
-function _makeId(length = 5) {
-    var text = ''
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    for (var i = 0; i < length; i++) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length))
-    }
-    return text
 }

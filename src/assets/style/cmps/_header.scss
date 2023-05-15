@@ -1,26 +1,34 @@
 header {
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 75px;
 
-    width: 30vw;
-    height: 100vh;
-    padding: 25px;
-
+    padding: 50px 25px;
     background-color: $grey-light;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            font-weight: 600;
+        }
+
+        a.active {
+            color: $brand;
+            cursor: default;
+        }
+    }
 
     svg {
         height: 75px;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-
-        font-size: 18px;
-        font-weight: 700;
+    .action {
+        flex-grow: 1;
     }
 }
 

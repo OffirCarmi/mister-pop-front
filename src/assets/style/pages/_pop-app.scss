@@ -1,0 +1,45 @@
+.pop-app {
+    .pop-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+
+        .pop-preview {
+            cursor: pointer;
+            width: 200px;
+            padding: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-container {
+                height: 225px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            h3.pop-name {
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+
+            b.pop-price {
+                font-size: 18px;
+                color: $sub-brand;
+                margin-bottom: 8px;
+            }
+
+            button.add-to-cart {
+                background-color: $brand;
+
+                &:hover {
+                    transform: scale(105%);
+                }
+            }
+        }
+    }
+}

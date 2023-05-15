@@ -6,8 +6,9 @@ import { Logo } from "./logo.jsx";
 export const Header = () => {
   return (
     <header>
-          <Logo />
-          <AppNavbar/>
+      <Logo />
+      <AppNavbar />
+      <div className="action">Actions</div>
     </header>
   );
 };

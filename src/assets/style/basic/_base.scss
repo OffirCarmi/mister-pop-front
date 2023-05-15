@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-    background-color: $bg;
+    // background-color: $bg;
     color: $txt;
     overflow-x: hidden;
     width: 100vw;
@@ -27,14 +27,10 @@ p {
 a {
     color: $txt;
     text-decoration: none;
+    font-size: 18px;
 
     &:hover {
         color: $white;
-    }
-
-    &.active {
-        color: $brand;
-        cursor: default;
     }
 }
 
@@ -42,7 +38,8 @@ button {
     cursor: pointer;
     border-radius: 100px;
     border: none;
-    font-family: sans-serif;
+    padding: 10px 30px;
+    font-size: 16px;
 }
 
 img {
@@ -58,11 +55,12 @@ input {
     cursor: pointer;
 }
 
-// hr {
-//     width: 85%;
-//     margin: -5px;
-//     border-bottom: 1px solid $txt;
-// }
+hr {
+    width: 25px;
+    border: 0;
+    border-bottom: 5px dotted $brand;
+    margin: 15px;
+}
 
 // ::-webkit-scrollbar {
 //     display: none;

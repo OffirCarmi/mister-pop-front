@@ -7,29 +7,29 @@ $black-opc: #1414143b;
 
 $bg: $white;
 $txt: $black;
+$shadow: #33333350;
 // $txt:#808080;
 
 $brand: #ffc900;
 $brand-opc: #ffc9003c;
 $brand-light: lighten($brand, 15%);
 $brand-dark: darken($brand, 15%);
+$sub-brand: #2B9EB3;
 $grey: #2d2d2d;
 $grey-light: lighten($grey, 50%);
 
 $success: #0eec4d;
 $failure: #fa2222;
 
-
 // CSS HELPERS
 
-// $shadow: 2px 2px 3px $g4-opc;
-// $shadow-bottom: 0px 3px 7px $g4-opc;
-// $shadow-movie: 3px 3px 5px $g4-opc;
-// $shadow-active: inset 3px 3px 5px $g4-opc;
-// $shadow-rtl: -5px 0px 7px $g4-opc;
-// $shadow-rtl: -3px -3px 7px $g4-opc;
+$hover-shadow: 0px 0px 10px $shadow;
+// $shadow-bottom: 0px 3px 7px $shadow;
+// $shadow-movie: 3px 3px 5px $shadow;
+// $shadow-active: inset 3px 3px 5px $shadow;
+// $shadow-rtl: -5px 0px 7px $shadow;
+// $shadow-rtl: -3px -3px 7px $shadow;
 // $shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%); ;
-
 
 // BREAKING POINTS
 // $mobile:
