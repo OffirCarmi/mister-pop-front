@@ -1,9 +1,16 @@
-import { ImgBox } from "./img-box";
+import { useNavigate } from "react-router-dom";
+
+import { PopBox } from "../pop-box";
 
 export const PopPreview = ({ pop }) => {
+  const navigate = useNavigate();
+
   return (
-    <article className="pop-preview">
-      <ImgBox popId={pop._id} />
+    <article
+      className="pop-preview"
+      onClick={() => navigate(`/pop/${pop._id}`)}
+    >
+      <PopBox popId={pop._id} />
       <hr />
       <h3 className="pop-name">{pop.name}</h3>
       <b className="pop-price">

@@ -7,7 +7,7 @@ import {
   removePop,
 } from "../store/actions/pop.action";
 
-import { PopList } from "../cmps/pop-list";
+import { PopList } from "../cmps/pop-app/pop-list";
 
 class _PopApp extends React.Component {
   componentDidMount() {
@@ -18,7 +18,7 @@ class _PopApp extends React.Component {
     const { pops } = this.props;
     return (
       <section className="pop-app">
-        {pops.length && <PopList pops={pops} />}
+        {pops.length > 0 && <PopList pops={pops} />}
       </section>
     );
   }

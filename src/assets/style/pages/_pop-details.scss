@@ -1,0 +1,163 @@
+.pop-details {
+    display: flex;
+    // gap: 25px;
+
+    .img-container {
+        flex: 0.4;
+        overflow: hidden;
+    }
+
+    .details-box {
+        flex: 0.6;
+        position: relative;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        padding: 25px;
+
+        button.close {
+            position: absolute;
+
+            background-color: $grey;
+            color: $white;
+            height: 25px;
+            width: 25px;
+            padding: 0;
+            top: 25px;
+            right: 25px;
+        }
+
+        .movie-container {
+            align-self: center;
+            height: 125px;
+        }
+
+        .info-box {
+            display: flex;
+            justify-content: space-between;
+
+            .info {
+                flex: 0.65;
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                text-align: center;
+                padding: 25px;
+                background-color: $grey;
+
+                h2.name {
+                    color: $brand;
+
+                    .price {
+                        color: $white;
+                        font-size: 20px;
+                        margin-inline-start: 15px;
+                    }
+                }
+
+                .label-list {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .label-preview {
+                        color: $grey-light;
+                        border: 1px solid $grey-light;
+                        border-radius: 100px;
+                        padding: 3px 8px;
+                        font-family: fredoka-light, sans-serif;
+                    }
+                }
+
+                p.description {
+                    font-size: 18px;
+                    font-family: fredoka-light, sans-serif;
+                    color: $grey-light2;
+                }
+            }
+
+            .actions {
+                flex: 0.3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+
+                .cart {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+
+                    b.pop-price {
+                        font-size: 22px;
+                        color: $sub-brand;
+                    }
+
+                    .counter {
+                        display: flex;
+                        justify-content: center;
+                        gap: 5px;
+
+                        & > * {
+                            border-radius: 100px;
+                        }
+
+                        p.counter {
+                            width: 30px;
+                            height: 30px;
+                            border: 2px solid $brand;
+                            text-align: center;
+                            line-height: 26px;
+                        }
+
+                        button {
+                            width: 20px;
+                            height: 20px;
+                            padding: 0;
+                            transform: translateY(5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .recommendations {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h4{
+                // padding-inline-start: 25px;
+            }
+
+            .recommend-pop-list {
+                display: flex;
+
+                gap: 25px;
+                padding: 10px 25px;
+
+                .recommend-pop-preview {
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 0;
+                    box-shadow: $hover-shadow;
+
+                    &:hover {
+                        transform: scale(105%);
+                    }
+
+                    img {
+                        height: 150px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

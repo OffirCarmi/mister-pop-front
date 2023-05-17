@@ -3,7 +3,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: fredoka, sans-serif;
 }
 
 body {
@@ -22,6 +22,7 @@ h5,
 h6,
 p {
     margin: 0;
+    font-weight: normal;
 }
 
 a {
@@ -40,6 +41,17 @@ button {
     border: none;
     padding: 10px 30px;
     font-size: 16px;
+    font-family: fredoka, sans-serif;
+
+    &.add-to-cart {
+        display: flex;
+        background-color: $brand;
+        font-family: fredoka-medium, sans-serif;
+
+        &:hover {
+            transform: scale(105%);
+        }
+    }
 }
 
 img {
@@ -61,6 +73,23 @@ hr {
     border-bottom: 5px dotted $brand;
     margin: 15px;
 }
+
+    ::-webkit-scrollbar {
+        display: block;
+        width: 16px;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $black-opc;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $grey-light;
+        border-radius: 10px;
+    }
+
 
 // ::-webkit-scrollbar {
 //     display: none;

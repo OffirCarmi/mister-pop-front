@@ -3,13 +3,14 @@ import thunkMiddleware from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 import monitorReducersEnhancer from './store/enhancers/monitor-reducers'
-import {logger} from './store/middleware/logger'
-import {rootReducer} from './store/root.reducer'
+// import {logger} from './store/middleware/logger'
+import { rootReducer } from './store/root.reducer'
 // import {initialState} from './store/initial-state'
 
 
 export default function configureStore(preloadedState) {
-    const middlewares = [logger, thunkMiddleware]
+    // const middlewares = [logger, thunkMiddleware]
+    const middlewares = [thunkMiddleware]
     const middlewareEnhancer = applyMiddleware(...middlewares)
 
     const enhancers = [middlewareEnhancer, monitorReducersEnhancer]

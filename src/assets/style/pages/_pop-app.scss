@@ -1,5 +1,6 @@
 .pop-app {
     .pop-list {
+        padding: 25px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -16,13 +17,10 @@
 
             .img-container {
                 height: 225px;
-
-                img {
-                    object-fit: contain;
-                }
             }
 
             h3.pop-name {
+                font-family: fredoka, sans-serif;
                 font-weight: normal;
                 margin-bottom: 8px;
             }
@@ -31,14 +29,6 @@
                 font-size: 18px;
                 color: $sub-brand;
                 margin-bottom: 8px;
-            }
-
-            button.add-to-cart {
-                background-color: $brand;
-
-                &:hover {
-                    transform: scale(105%);
-                }
             }
         }
     }
