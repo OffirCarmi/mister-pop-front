@@ -1,0 +1,251 @@
+.pop-admin {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    button.add-pop {
+        align-self: flex-start;
+        background-color: $brand-sub;
+        color: $brand;
+    }
+
+    section.pop-edit {
+        border-collapse: collapse;
+        width: 100%;
+
+        ul.pop-list {
+            li.pop-preview {
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid $brand-sub;
+
+                &.edit {
+                    background-color: $grey-light2;
+
+                    .edit {
+                        background-color: $brand-sub-opc;
+                        option {
+                            background-color: $white;
+                        }
+                    }
+
+                    button {
+                        background-color: $brand-sub;
+                        color: $brand;
+                    }
+                }
+
+                ::-webkit-scrollbar {
+                    display: block;
+                    width: 12px;
+                    border-radius: 8px;
+                }
+                ::-webkit-scrollbar-track {
+                    border-radius: 8px;
+                }
+                ::-webkit-scrollbar-thumb {
+                    border-radius: 8px;
+                }
+
+                div.image {
+                    width: 100px;
+                    padding: 0 0 0 10px;
+                    margin-inline-end: 10px;
+                    .img-container {
+                        height: 150px;
+                    }
+                }
+
+                div.details {
+                    flex: 1;
+                    display: flex;
+                    gap: 25px;
+
+                    & > * {
+                        padding: 10px;
+                        flex: 1;
+                    }
+
+                    section.left {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 5px;
+
+                        div.name {
+                            display: flex;
+
+                            label {
+                                width: 60px;
+                            }
+
+                            input {
+                                width: calc(100% - 60px);
+                                padding: 2px 6px;
+
+                                // background: none;
+                                border-bottom: 1px solid $brand-sub;
+
+                                font-family: monospace;
+                                font-size: 16px;
+                            }
+                        }
+
+                        div.price {
+                            display: flex;
+
+                            label {
+                                width: 60px;
+                            }
+
+                            .input-box {
+                                position: relative;
+
+                                span {
+                                    position: absolute;
+                                    left: 5px;
+                                    top: 1.5px;
+                                }
+
+                                input#currency {
+                                    width: 100px;
+                                    padding: 2px 6px 2px 15px;
+
+                                    border-bottom: 1px solid $brand-sub;
+
+                                    font-family: monospace;
+                                    font-size: 16px;
+                                }
+
+                                input::-webkit-outer-spin-button,
+                                input::-webkit-inner-spin-button {
+                                    -webkit-appearance: none;
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        div.movie {
+                            display: flex;
+
+                            label {
+                                width: 60px;
+                            }
+
+                            select {
+                                border: none;
+                                border-bottom: 1px solid $brand-sub;
+                                width: calc(100% - 60px);
+
+                                padding: 2px;
+
+                                font-family: monospace;
+                                font-size: 16px;
+
+                                &:focus-visible {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        div.labels {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            margin-top: 20px;
+
+                            label.title {
+                                font-family: fredika, sans-serif;
+                                font-size: 16px;
+                            }
+
+                            hr.inner {
+                                width: 100%;
+                                border: 0;
+                                border-bottom: 1px solid $txt;
+                                margin: 0;
+                            }
+
+                            .character,
+                            .role {
+                                display: flex;
+                                gap: 20px;
+                            }
+
+                            label {
+                                font-family: monospace;
+                                font-size: 16px;
+
+                                input {
+                                    margin-inline-end: 5px;
+                                    transform: translateY(1.5px);
+                                }
+                            }
+                        }
+                    }
+
+                    section.right {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        div.description {
+                            div.textarea-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+
+                                textarea {
+                                    outline: 1px solid $brand-sub;
+                                    width: 100%;
+                                    // max-width: 300px;
+                                    height: 100px;
+                                    border: none;
+                                    resize: none;
+                                }
+                            }
+                        }
+
+                        .stock-id-box {
+                            display: flex;
+                            justify-content: space-between;
+
+                            div.id {
+                                // align-self: flex-end;
+                                // padding-inline-end: 10px;
+                            }
+
+                            div.stock {
+                                display: flex;
+                                gap: 5px;
+                            }
+                        }
+                    }
+                }
+
+                div.save {
+                    width: 110px;
+                    text-align: center;
+                    padding: 0 10px 0 0;
+
+                    button.enable {
+                        background-color: $brand-sub;
+                        color: $brand;
+                    }
+
+                    button.disable {
+                        background: transparent;
+                        color: transparent;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}

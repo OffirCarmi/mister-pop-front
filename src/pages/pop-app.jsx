@@ -1,11 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  loadPops,
-  savePop,
-  togglePop,
-  removePop,
-} from "../store/actions/pop.action";
+import { loadPops } from "../store/actions/pop.action";
 
 import { PopList } from "../cmps/pop-app/pop-list";
 
@@ -30,6 +25,6 @@ const mapStateToProps = (storeState) => {
   };
 };
 
-const mapDispatchToProps = { loadPops, savePop, togglePop, removePop };
+const mapDispatchToProps = { loadPops };
 
 export const PopApp = connect(mapStateToProps, mapDispatchToProps)(_PopApp);

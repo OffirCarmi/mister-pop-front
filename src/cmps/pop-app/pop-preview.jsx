@@ -15,7 +15,7 @@ export const PopPreview = ({ pop }) => {
       <h3 className="pop-name">{pop.name}</h3>
       <b className="pop-price">
         <span>$</span>
-        {pop.price.toFixed(2)}
+        {pop.price}
       </b>
       <button className="add-to-cart">Add to cart</button>
     </article>

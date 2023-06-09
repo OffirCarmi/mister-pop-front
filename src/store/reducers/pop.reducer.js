@@ -6,14 +6,14 @@ export const popReducer = (state = initialState, action) => {
         case 'SET_POPS':
             return { ...state, pops: action.pops }
         case 'ADD_POP':
-            return { ...state, pops: [...state.pops, action.todo] }
+            return { ...state, pops: [...state.pops, action.pop] }
         case 'UPDATE_POP':
-            const idx = state.pops.find(todo => todo._id === action.todo._id)
+            const idx = state.pops.findIndex(pop => pop._id === action.pop._id)
             pops = [...state.pops]
-            pops[idx] = action.todo
+            pops[idx] = action.pop
             return { ...state, pops }
         case 'REMOVE_POP':
-            pops = state.pops.filter(todo => todo._id !== action.todoId)
+            pops = state.pops.filter(pop => pop._id !== action.popId)
             return { ...state, pops }
         default:
             return state

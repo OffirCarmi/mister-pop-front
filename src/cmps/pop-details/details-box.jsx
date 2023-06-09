@@ -12,11 +12,11 @@ export const DetailsBox = ({ pop }) => {
       <button className="close" onClick={() => navigate("/pop")}>
         X
       </button>
-      <MovieBox movie={pop.movieTitle} />
+      <MovieBox movieCode={pop.movieCode} />
       <div className="info-box">
         <div className="info">
           <h2 className="name">
-            {pop.name} <span className="price"> ${pop.price.toFixed(2)}</span>
+            {pop.name} <span className="price"> ${pop.price}</span>
           </h2>
 
           <LabelList labels={pop.labels} />

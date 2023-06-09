@@ -1,12 +1,10 @@
-
-
-export const MovieBox = ({ movie }) => {
-
-
+export const MovieBox = ({ movieCode }) => {
   return (
     <div className="movie-container">
-    
-      <img src={require(`../assets/imgs/movies/${movie}.png`)} alt="pop-img" />
+      <img
+        src={require(`../assets/imgs/movies/${movieCode}.png`)}
+        alt="pop-img"
+      />
     </div>
   );
 };

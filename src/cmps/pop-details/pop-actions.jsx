@@ -17,7 +17,7 @@ export class PopActions extends React.Component {
         <div className="cart">
           <b className="pop-price">
             <span>$</span>
-            {price.toFixed(2)}
+            {price}
           </b>
           <Counter setPrice={this.setPrice} />
           <button className="add-to-cart">Add to cart</button>
